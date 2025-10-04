@@ -42,7 +42,17 @@ return {
         "html", "css", "json",
         "go", "gomod", "gosum", "gowork",
         "javascript", "typescript", "tsx", "svelte",
+        "dart",
       },
     },
+  },
+
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    ft = "dart",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    opts = {},
   },
 }
