@@ -28,6 +28,9 @@ return {
           global = true,
         },
       },
+      filters = {
+        git_ignored = false,
+      },
     },
   },
 
@@ -67,6 +70,21 @@ return {
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
+    },
+  },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        file_ignore_patterns = {},
+      },
+      pickers = {
+        find_files = {
+          hidden = true,
+          no_ignore = true,
+        },
+      },
     },
   },
 }
