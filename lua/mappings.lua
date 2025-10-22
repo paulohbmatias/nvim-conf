@@ -8,5 +8,6 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<C-q>", "<cmd>qa<cr>", { desc = "Quit Neovim" })
 map("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
+map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP code action" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
